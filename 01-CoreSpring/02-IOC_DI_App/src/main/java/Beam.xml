@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Below used for bean scope singleton to prototype -->
+<!-- 	<bean id="petrolEng" class="in.Shrii.beans.PetrolEngine" scope = "prototype"/> -->
+	
+<!--     <bean id="eng1" class="in.Shrii.beans.PetrolEngine" /> -->
+    
+<!--     <bean id="dieselEng" class="in.Shrii.beans.DieselEngine" /> -->
+<!--     <bean id="eng" class="in.Shrii.beans.DieselEngine" /> -->
+   
+<!-- 	<bean id="car" class="in.Shrii.beans.Car" autowire="byName"> -->
+<!--     <bean id="Car" class="in.Shrii.beans.Car"> -->
+<!-- 			<property name="eng" ref="dieselEng" /> -->
+<!-- 			<constructor-arg name="eng" ref="petrolEng" />				 -->
+
+			
+<!--     </bean> -->
+    
+<!--         <bean id="eng1" class="in.Shrii.beans.PetrolEngine" autowire-candidate="false"/> -->
+    
+<!--     <bean id="eng" class="in.Shrii.beans.DieselEngine" autowire-candidate="true"/> -->
+   
+<!-- 	<bean id="car" class="in.Shrii.beans.Car" autowire="byType"> -->
+
+			
+<!--     </bean> -->
+
+	<bean id="eng2" class="in.Shrii.beans.PetrolEngine" autowire-candidate="false"/>
+
+	<bean id="eng1" class="in.Shrii.beans.DieselEngine" autowire-candidate="true"/>
+
+	<bean id="car" class="in.Shrii.beans.Car" autowire="constructor" />
+
+
+</beans>
